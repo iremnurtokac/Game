@@ -41,6 +41,7 @@ func main() {
 			}
 			gs, ok := Games.Games[gsname]
 			if !ok {
+				//if ok {
 				gs = GameState{[9]string{}, "X", "Start the Game!"}
 
 				Games.Games[gsname] = gs
